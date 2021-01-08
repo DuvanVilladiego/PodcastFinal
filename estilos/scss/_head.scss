@@ -1,0 +1,153 @@
+/*cabecera*/
+header {
+    width: 100%;
+    position: fixed;
+    height: 40px;
+    top: 0;
+    padding: 2%;
+    background-color: $blanco;
+}
+div1 img {
+    float: left;
+    padding-left: 3%;
+}
+@media screen and (min-width:768px) {
+    header {
+        height: 10%;
+        position: absolute;
+    } 
+    div1 img {
+        padding-left: 3%;
+        transform: scale(1.5);
+    }
+    
+    
+}
+
+/*margen*/
+main {
+    padding-top: 80px;
+}
+/*menu desplegable*/
+header nav {
+    float: right;
+}
+header nav .menu ul {
+    /*posicion*/
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    overflow: hidden;
+    list-style: none;
+    background: linear-gradient(225deg,$azul,$azul2);
+    height: 0px;
+    transition: 0.5s ease;
+}
+header nav .menu  ul li {
+    position: relative;
+} 
+header nav .menu  ul li:hover {
+    background: linear-gradient(225deg,$azul2,$azul);
+    transition: 0.5s ease-in-out;
+} 
+header nav .menu ul li a {
+    position: relative;
+    text-decoration: none;
+    color: $blanco;
+    padding: 16px;
+    line-height: 28px;
+    display: block;
+}
+header nav .menu  ul li a:hover {
+    color: #fff;
+} 
+/*animación del menu que se desplega*/
+header nav .menu input[type="checkbox"]:checked ~ ul {
+    height: 240px;
+    transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+}
+header nav .menu {
+    padding-top: 3px;
+}
+/*checkbox*/
+header nav .menu input {
+    display: block;
+    width: 4%;
+    height: 3%;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+/*lineas del menu*/
+header nav .menu span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 6.5px;
+    position: relative;
+    background: linear-gradient(225deg,$azul,$azul2);
+    z-index: 1;
+    transform-origin: 3px 0px;
+    transition: transform 0.5s ease,
+    opacity 0.55s ease;
+}
+header nav .menu span:first-child {
+    transform-origin: 0% 0%;
+}
+header nav .menu span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+/*cruz*/
+header nav .menu input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, 1px);
+}
+header nav .menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+header nav .menu input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 0px);
+}
+@media screen and (min-width: 1000px){
+    header nav .menu ul {
+        position: relative;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        background: unset;
+        height: unset;
+    }
+    header nav .menu  ul li {
+        padding: 5px 10px;
+        display: inline-block;
+    } 
+    header nav .menu  ul li:hover {
+        background: unset;
+        border-bottom: 2px solid black;
+    } 
+    header nav .menu ul li a {
+        padding: unset;
+        line-height: unset;
+        color:black
+    }
+    header nav .menu  ul li a:hover {
+        color: unset;
+        color:black
+    } 
+    header nav .menu input {
+        display: none;
+    }
+    header nav .menu span {
+        display: none;
+    }  
+    
+    .color {
+        color: black;
+        display: block;
+    }
+}

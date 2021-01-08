@@ -1,0 +1,64 @@
+/*footer*/
+
+.novedades {
+    color:$blanco;
+    text-align: center;
+    padding: 5%;
+    width: 80%;
+}
+
+.fontawesome {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+/*austes personalizados*/
+
+.pad {
+    margin-bottom: 0px;
+}
+
+.pad1 {
+    margin: 5%;
+}
+
+.st {
+    width: 100%;
+}
+
+.right {
+    width: 100%;
+}
+
+@media screen and (min-width:1000px) {
+    .pad {
+        margin-bottom: 40px;
+    }
+    .novedades {
+        font-size: 48px;
+    }
+    .fontawesome {
+        display: flex;
+        padding-bottom: 10px;
+        width: -webkit-fill-available;
+    }
+    .end {
+        justify-content: flex-end;
+    }
+    .st {
+        float: left;
+        width: 50%;
+    }
+    .right {
+        float: right;
+        width: 40%;
+        margin-left: 50%;
+    }
+}
