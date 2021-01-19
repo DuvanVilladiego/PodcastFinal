@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/import.css">
+    <link rel="stylesheet" href="./estilos/scss/import.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -13,9 +13,9 @@
 
 <body>
     <header>
-        <div1>
+        <div class="div1">
             <img src="assets\icons\logo.svg" alt="perfil en svg">
-        </div1>
+        </div>
         <nav>
             <div class="menu">
                 <input type="checkbox" id="checkbox" />
@@ -48,7 +48,7 @@
         </div>
         <!--figura1-->
         <div class="rectangle">
-            <a name="EPISODIOS"></a>
+            <a id="EPISODIOS"></a>
             <div class="_title">
                 <h1 class="sans episodios_title">Episodios</h1>
             </div>
@@ -56,26 +56,25 @@
             <div class="enlace">
                 <div class="ijust">
                     <iframe class="pad" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
-                        width="584" height="232" frameborder="0" allowtransparency="true"
-                        allow="encrypted-media"></iframe>
+                        width="584" height="232" allow="encrypted-media"></iframe>
                     <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="584"
-                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        height="232" allow="encrypted-media"></iframe>
                 </div>
                 <div class="ijust">
                     <iframe class="pad" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
-                        width="584" height="232" frameborder="0" allowtransparency="true"
-                        allow="encrypted-media"></iframe>
+                        width="584" height="232" allow="encrypted-media"></iframe>
                     <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="584"
-                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        height="232" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </div>
         <!--telefono img-->
         <div class="pos">
-            <ul class="cow"><img class="resize" src="assets/fotos/phone.png"
-                    alt="mujer en una computadora antigua probablemente de IBM">
+            <ul class="cow">
+                <li><img class="resize" src="assets/fotos/phone.png"
+                        alt="mujer en una computadora antigua probablemente de IBM"></li>
                 <!--texto-->
-                <a name="NOSOTROS"></a>
+                <a id="NOSOTROS"></a>
                 <BR></BR>
                 <div class="cont">
                     <div class="text">
@@ -98,7 +97,7 @@
 
             </ul>
         </div>
-        <a name="ENTREVISTAS"></a>
+        <a id="ENTREVISTAS"></a>
         <br>
         <div class="text">
             <h3 class="sans s2">Invitadas/os estelares</h3>
@@ -109,15 +108,15 @@
                 <img src="assets/fotos/Katie-Bouman.png" alt="Katie-Bouman">
                 <img src="assets/fotos/Margaret_Hamilton.png" alt="Margaret_Hamilton">
             </div>
-            <div class="gal"><img src="assets/fotos/An E.R.A.Univac 1103 computer in the 1950s.png"
+            <div class="gal"><img src="assets/fotos/An-E.R.A.Univac-1103-computer-in-the-1950s.png"
                     alt="An E.R.A.Univac 1103 computer in the 1950s">
-                <img src="assets/fotos/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                <img src="assets/fotos/Computer-operators-with-an-Eniac—the-world’s-first-programmable-general-purpose-computer.png"
                     alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
                 <img src="assets/fotos/susan-kare.png" alt="susan-kare">
             </div>
 
         </div>
-        <a name="TOPICOS"></a><br>
+        <a id="TOPICOS"></a><br>
         <!--text algunos de nuestros temas-->
         <div class="text re">
             <h3 class="sans s2">Algunos de nuestros temas</h3>
@@ -144,18 +143,18 @@
         </div>
     </main>
     <footer class="fontawesome">
-            <div class="st">
-                <h4 class="mono pad1">© 2019— Hello blue pale dot</h4>
-            </div>
-            <div class="right">
-                <aside class="copy">
-                    <a href="https://www.spotify.com/co/" target="_blank"><i class="fab fa-spotify"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://web.telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
-                </aside>
-            </div>
+        <div class="st">
+            <h4 class="mono pad1">© 2019— Hello blue pale dot</h4>
+        </div>
+        <div class="right">
+            <aside class="copy">
+                <a href="https://www.spotify.com/co/" target="_blank"><i class="fab fa-spotify"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+            </aside>
+        </div>
     </footer>
 </body>
 

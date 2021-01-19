@@ -63,7 +63,7 @@ header {
   background-color: #ffffff;
 }
 
-div1 img {
+.div1 {
   float: left;
   padding-left: 3%;
 }
@@ -73,7 +73,7 @@ div1 img {
     height: 10%;
     position: absolute;
   }
-  div1 img {
+  .div1 {
     padding-left: 3%;
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
@@ -600,10 +600,6 @@ div img {
 }
 
 /*austes personalizados*/
-.fab {
-  text-decoration: none;
-}
-
 .pad {
   margin-bottom: 0px;
 }

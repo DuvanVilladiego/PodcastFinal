@@ -7,7 +7,7 @@ header {
     padding: 2%;
     background-color: $blanco;
 }
-div1 img {
+.div1 {
     float: left;
     padding-left: 3%;
 }
@@ -16,7 +16,7 @@ div1 img {
         height: 10%;
         position: absolute;
     } 
-    div1 img {
+    .div1 {
         padding-left: 3%;
         transform: scale(1.5);
     }
