@@ -16,6 +16,11 @@ li {
   list-style: none;
 }
 
+/*limpiar vinculos*/
+a:visited {
+  color: unset;
+}
+
 /*tipografias*/
 .mono {
   font-family: 'IBM Plex Mono';
@@ -590,6 +595,7 @@ div img {
       align-content: center;
   text-align: center;
   padding-bottom: 5%;
+  color: #060A24 100%;
 }
 
 .copy {
