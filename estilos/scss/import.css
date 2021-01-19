@@ -18,7 +18,7 @@ li {
 
 /*limpiar vinculos*/
 a:visited {
-  color: unset;
+  color: #060A24 100%;
 }
 
 /*tipografias*/
